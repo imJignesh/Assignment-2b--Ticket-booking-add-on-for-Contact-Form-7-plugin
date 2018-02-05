@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.booking_element{position:relative; padding-bottom:60px;}
+.booking_element:before{ position:absolute; content:'Screen This Way';font-size:12px; line-height:25px; bottom:0; left:0; right:0; height:30px; text-align:center; border:3px solid #666;}
+.booking_element:after{ content:''; display:table; width:100%;}
+.booking_element label{ position:relative; width:10%; border:3px solid #ccc;  float:left; }
+.booking_element label span{ position:absolute; z-index:0; top:0; left:0;right:0;bottom:0; }
+.booking_element input{display:block; margin:10px auto; z-index:2; opacity:0; position:raltive;}
+
+input[type="checkbox"]:checked + span{background-color:#0eb31b;}
+input[type="checkbox"]:disabled + span{background-color:#ccc;}
